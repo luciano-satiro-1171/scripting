@@ -66,4 +66,4 @@ sudo systemctl start docker
 	IF_ELSE "docker iniciado" "docker nao iniciado" || exit 1
 
 # testa o docker manualmente:
-echo "agora execute o comando para testar o docker: sudo docker run hello-world" >> $LOG
+echo "[warning] agora execute o comando para testar o docker: sudo docker run hello-world" >> $LOG
