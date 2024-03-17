@@ -2,7 +2,7 @@
 
 # author:      luciano dos santos
 # created:     09/03/2024
-# revision:    15/03/2024
+# revision:    17/03/2024
 # rule 1:      sem acento
 # rule 2:      variavel em maiusculo
 # rule 3:      funcao em maiusculo
@@ -26,7 +26,7 @@ IF_ELSE() {
 # operacoes:
 # comandos padronizados:
 sudo sed -i "s/enabled=0/enabled=1/" /etc/yum.repos.d/CentOS-Base.repo
-	IF_ELSE "CentOS-Base.repo" "CentOS-Base.repo"
+	IF_ELSE "centosbase.repo" "centos-base.repo"
 
 sudo yum -y update
         IF_ELSE "update" "update"
