@@ -35,6 +35,7 @@ sudo yum install -y vim-enhanced
         IF_ELSE "vim" "vim"
 
 # comandos personalizados: 
+# configura acesso ssh:
 #sed -i 's/#PasswordAuthentication\ yes/PasswordAuthentication\ yes/g' /etc/ssh/sshd_config
 #	IF_ELSE "ssh liberado" "ssh nao liberado"
 

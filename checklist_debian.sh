@@ -2,7 +2,7 @@
 
 # author:      luciano dos santos
 # created:     09/03/2024
-# revision:    11/03/2024
+# revision:    18/03/2024
 # rule 1:      sem acento
 # rule 2:      variavel em maiusculo
 # rule 3:      funcao em maiusculo
@@ -50,6 +50,7 @@ sudo apt-get -y install software-properties-common
 	IF_ELSE "software-properties-common" "software-properties-common"
 
 # comandos personalizados:
+# altera o idioma:
 #sudo apt-get -y install language-pack-pt
 #	IF_ELSE "language-pack-pt" "language-pack-pt"
 
@@ -57,6 +58,7 @@ sudo apt-get -y install software-properties-common
 #timedatectl set-timezone "America/Sao_Paulo"
 #	IF_ELSE "timezone alterado" "timezone nao alterado"
 
+# configura acesso ssh:
 #sudo sed -i 's/PasswordAuthentication\ no/#PasswordAuthentication\ no/g' /etc/ssh/sshd_config.d/60-cloudimg-settings.conf
 #        IF_ELSE "ssh resolvido" "ssh nao resolvido"
 
