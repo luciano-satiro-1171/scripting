@@ -3,7 +3,7 @@
 # author:      luciano dos santos
 # contact:     luciano.satiro1171@gmail.com
 # created:     26/02/2023
-# revision:    10/03/2024
+# revision:    23/03/2024
 # rule 1:      sem acento
 # rule 2:      variaveis em maiusculo
 # rule 3:      funcoes em maiusculo
@@ -12,7 +12,7 @@
 
 # variaveis:
 LOG="./arq.log"
-INT_TMP=$(date +%T)
+INT_TMP=$(date +%T) # inicio do tempo
 
 # funcoes:
 # evita repeticao do if e else:
@@ -27,7 +27,7 @@ IF_ELSE() {
 
 # operacoes:
 # calcula tempo de duracao:
-OUT_TMP=$(date +%T)
+OUT_TMP=$(date +%T) # final do tempo
 INICIO=$(date -u -d "$INT_TMP" +"%s")
 FINAL=$(date -u -d "$OUT_TMP" +"%s")
 TEMPO=$(date -u -d "0 $FINAL sec - $INICIO sec" +"%H:%M:%S")

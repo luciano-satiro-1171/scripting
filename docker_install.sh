@@ -3,12 +3,12 @@
 # author:      luciano dos santos
 # contact:     luciano.satiro1171@gmail.com
 # created:     17/03/2024
-# revision:    17/03/2024
+# revision:    23/03/2024
 # rule 1:      sem acento
 # rule 2:      variaveis em maiusculo
 # rule 3:      funcoes em maiusculo
 # rule 4:      restante em minusculo
-# description: instala o docker no centos
+# description: instala o docker em distribuicoes redhat
 
 # variaveis:
 LOG="./docker.log"
@@ -30,7 +30,7 @@ sudo yum remove -y docker docker-client docker-client-latest docker-common docke
 	IF_ELSE "pacotes docker 1 removidos" "pacotes docker 1 nao removidos" || exit 1
 
 sudo yum remove -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin docker-ce-rootless-extras
-	IF_ELSE "pacotes docker 2 removidos" "pacotes docker 2 removidos" || exit 1
+	IF_ELSE "pacotes docker 2 removidos" "pacotes docker 2 nao removidos" || exit 1
 
 # remove diretorio docker:
 if [ -e "/var/lib/docker" ]; then

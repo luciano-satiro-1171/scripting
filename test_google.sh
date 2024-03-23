@@ -3,7 +3,7 @@
 # author:      luciano dos santos
 # contact:     luciano.satiro1171@gmail.com
 # created:     19/05/2018
-# revision:    10/03/2024
+# revision:    23/03/2024
 # rule 1:      sem acento
 # rule 2:      variaveis em maiusculo
 # rule 3:      funcoes em maiusculo

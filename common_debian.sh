@@ -1,8 +1,9 @@
 #!/bin/bash
 
 # author:      luciano dos santos
+# contact:     luciano.satiro1171@gmail.com
 # created:     09/03/2024
-# revision:    22/03/2024
+# revision:    23/03/2024
 # rule 1:      sem acento
 # rule 2:      variavel em maiusculo
 # rule 3:      funcao em maiusculo
