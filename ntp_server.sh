@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # author:      luciano dos santos
+# contact:     luciano.satiro1171@gmail.com
 # created:     20/02/2023
 # revision:    12/03/2024
 # rule 1:      sem acento

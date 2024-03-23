@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # author:      luciano dos santos
+# contact:     luciano.satiro1171@gmail.com
 # created:     00/00/0000
 # revision:    00/00/0000
 # rule 1:      sem acento
