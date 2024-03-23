@@ -36,8 +36,8 @@ sudo apt-get -y update
 
 # instala pacotes:
 for PACOTE in $LISTA; do
-sudo apt-get -y install $PACOTE
-	IF_ELSE "$PACOTE" "$PACOTE" || exit 1
+	sudo apt-get -y install $PACOTE
+		IF_ELSE "$PACOTE" "$PACOTE" || exit 1
 done
 
 # instala complementos:
