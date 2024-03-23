@@ -1,17 +1,16 @@
 #!/bin/bash
 
 # author:      luciano dos santos
-# contact:     luciano.satiro1171@gmail.com
 # created:     09/03/2024
-# revision:    17/03/2024
+# revision:    22/03/2024
 # rule 1:      sem acento
 # rule 2:      variavel em maiusculo
 # rule 3:      funcao em maiusculo
 # rule 4:      restante em minusculo
-# description: comandos basicos de pos-instalacao base redhat
+# description: atualiza e instala pacotes essencias em distribuicoes redhat
 
 # variavel:
-LOG="./checklist.log"
+LOG="./common.log"
 
 # funcoes:
 # evita repeticao do if e else:
@@ -25,26 +24,16 @@ IF_ELSE() {
 }
 
 # operacoes:
-# comandos padronizados:
+# atualiza repositorio e sistema:
 sudo sed -i "s/enabled=0/enabled=1/" /etc/yum.repos.d/CentOS-Base.repo
 	IF_ELSE "centosbase.repo" "centos-base.repo"
 
 sudo yum -y update
         IF_ELSE "update" "update"
 
+# instala pacotes essencias:
 sudo yum install -y vim-enhanced
         IF_ELSE "vim" "vim"
-
-# comandos personalizados: 
-# configura acesso ssh:
-#sed -i 's/#PasswordAuthentication\ yes/PasswordAuthentication\ yes/g' /etc/ssh/sshd_config
-#	IF_ELSE "ssh liberado" "ssh nao liberado"
-
-#sed -i 's/PasswordAuthentication\ no/#PasswordAuthentication\ no/g' /etc/ssh/sshd_config
-#	IF_ELSE "ssh resolvido" "ssh nao resolvido"
-
-#systemctl restart sshd
-#	IF_ELSE "sshd foi reiniciado" "sshd nao foi reiniciado"
 
 # limpeza:
 sudo yum clean all
