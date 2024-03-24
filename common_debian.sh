@@ -3,7 +3,7 @@
 # author:      luciano dos santos
 # contact:     luciano.satiro1171@gmail.com
 # created:     09/03/2024
-# revision:    23/03/2024
+# revision:    24/03/2024
 # rule 1:      sem acento
 # rule 2:      variavel em maiusculo
 # rule 3:      funcao em maiusculo
@@ -54,6 +54,9 @@ sudo apt-get -y install software-properties-common
 # limpeza:
 sudo apt-get -y autoremove
 	IF_ELSE "autoremove" "autoremove"
+
+sudo apt-get -y clean
+	IF_ELSE "clean" "clean"
 
 sudo apt-get -y autoclean
 	IF_ELSE "autoclean" "autoclean"
