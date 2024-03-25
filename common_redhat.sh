@@ -3,7 +3,7 @@
 # author:      luciano dos santos
 # contact:     luciano.satiro1171@gmail.com
 # created:     09/03/2024
-# revision:    23/03/2024
+# revision:    25/03/2024
 # rule 1:      sem acento
 # rule 2:      variavel em maiusculo
 # rule 3:      funcao em maiusculo
@@ -37,5 +37,8 @@ sudo yum install -y vim-enhanced
         IF_ELSE "vim" "vim"
 
 # limpeza:
-sudo yum clean all
+sudo yum -y autoremove
+	IF_ELSE "autoremove" "autoremove"
+
+sudo yum -y clean all
         IF_ELSE "clean" "clean"
